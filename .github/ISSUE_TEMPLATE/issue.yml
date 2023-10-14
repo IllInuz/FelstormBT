@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a bug or an issue with our Felstorm server.
+description: Report a bug, or an issue with out felstorm server.
 body:
   - type: markdown
     attributes:
@@ -8,7 +8,7 @@ body:
   - type: dropdown
     id: Btype
     attributes:
-      label: Type of Bug
+      label: Type bug
       options:
         - "Achievements"
         - "Battle Pets"
@@ -51,64 +51,64 @@ body:
         - "Item Warlords of Draenor"
         - "Item Legion"
         - "Misc Translation"
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
       label: Description
       description: |
-        Describe the bug or the issue here in detail, what is happening, and why you think it's broken.
-      validations:
-        required: true
+        Describe the bug or the issue here in detail, what is happening, and why u think its broken.
+    validations:
+      required: true
   - type: textarea
-    id: expected_behaviour
+    id: expected
     attributes:
       label: Expected behaviour
       description: |
-        Tell us what should happen instead. If possible, include YouTube links to the quest, boss, object, item, etc.
-      validations:
-        required: true
+        Tell us what should happen instead, if possible include youtube links to the quest, boss, object, item etc.
+    validations:
+      required: true
   - type: textarea
-    id: steps_to_reproduce
+    id: reproduce
     attributes:
       label: Steps to reproduce the problem
       description: |
-        1. Step 1: Include entries of affected creatures, items, quests with a link to the relevant WoWhead or for 3.3.5a branch at https://aowow.trinitycore.info/ page.
+        1. Step 1 include entries of affected creatures / items / quests with a link to the relevant wowhead or for 3.3.5a branch at https://aowow.trinitycore.info/ page.  
         2. Step 2
         3. Step 3
-      validations:
-        required: true
+    validations:
+      required: true
   - type: dropdown
-    id: faction
+    id: Faction
     attributes:
       label: Faction
       options:
         - Horde
         - Alliance
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
-    id: level_class_spec
+    id: Level, Class, and Spec
     attributes:
       label: Level, Class, and Spec
       description: |
-        110, warlock, Demonology, for example.
-      validations:
-        required: true
+        110, warlock, Demonology For example.
+    validations:
+      required: true
   - type: input
-    id: operating_system
+    id: os
     attributes:
       label: Operating system
       description: |
-        Operating System, i.e., Windows 10 x64, Debian 10 x64, etc
-      validations:
-        required: true
+        Operating System, i.e. Windows 10 x64, Debian 10 x64, etc
+    validations:
+      required: true
   - type: textarea
-    id: additional_notes
+    id: Notes
     attributes:
       label: Additional Notes
       description: |
-        Any other information you believe could be valuable in this bug report.
-      validations:
-        required: true
+        Any other information u believe could be valueable in this bug report.
+    validations:
+      required: true
