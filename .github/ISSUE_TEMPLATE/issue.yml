@@ -6,7 +6,7 @@ body:
       value: |
         Thanks for taking the time to fill out this form! Please make sure to fill all fields, including the Title above.
   - type: dropdown
-    id: Type Bug
+    id: Btype
     attributes:
       label: Type bug
       options:
