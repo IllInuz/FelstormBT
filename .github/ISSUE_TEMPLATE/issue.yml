@@ -1,17 +1,64 @@
-name: Generic issue
-description: Report an issue or a suggestion.
+name: Bug Report
+description: Report a bug, or an issue with out felstorm server.
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this form! Please make sure to fill all fields, including the Title above.
+  - type: dropdown
+    id: Type Bug
+    attributes:
+      label: Type bug
+      options:
+        - Achievements
+        - Battle Pets
+        - Class Halls
+        - Classes - Death Knight
+        - Classes - Demon Hunter
+        - Classes - Druid
+        - Classes - Hunter
+        - Classes - Mage
+        - Classes - Monk
+        - Classes - Paladin
+        - Classes - Priest
+        - Classes - Rogue
+        - Classes - Shaman
+        - Classes - Warlock
+        - Classes - Warrior
+        - Garrison
+        - General
+        - Instances
+        - Other bugs
+        - Other quests
+        - Professions
+        - PVP
+        - Quests -  Eastern Kingdom
+        - Quests - Argus
+        - Quests - Broken Isles
+        - Quests - Cataclysm
+        - Quests - Draenor
+        - Quests - Northrend
+        - Quests - Outland
+        - Quests - Pandaria
+        - Quests - Kalimdor
+        - Quest Worldquest
+        - World events
+        - Item - Classic
+        - Item - TBC
+        - Item - Wotlk
+        - Item - Cataclysm
+        - Item - Mists of Pandaria
+        - Item - Warlords of Draenor
+        - Item - Legion
+        - Misc - Translation
+      validations:
+      required: true
   - type: textarea
     id: description
     attributes:
       label: Description
       description: |
-        Description of the problem or issue here.
-        If this is a crash, post the crashlog (upload to https://gist.github.com/).
+        Describe the bug or the issue here in detail, what is happening, and why u think its broken.
     validations:
       required: true
   - type: textarea
@@ -19,7 +66,7 @@ body:
     attributes:
       label: Expected behaviour
       description: |
-        Tell us what should happen instead.
+        Tell us what should happen instead, if possible include youtube links to the quest, boss, object, item etc.
     validations:
       required: true
   - type: textarea
@@ -33,20 +80,20 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: branch
+    id: Faction
     attributes:
-      label: Branch
+      label: Faction
       options:
-        - 3.3.5
-        - master
+        - Horde
+        - Alliance
     validations:
       required: true
   - type: textarea
-    id: commit
+    id: Level, Class, and Spec
     attributes:
-      label: TC rev. hash/commit
+      label: Level, Class, and Spec
       description: |
-        Copy the result of server debug command (if you need to run it from client get prat addon)
+        110, warlock, Demonology For example.
     validations:
       required: true
   - type: input
@@ -58,11 +105,10 @@ body:
     validations:
       required: true
   - type: textarea
-    id: custom
+    id: Notes
     attributes:
-      label: Custom changes
+      label: Additional Notes
       description: |
-        List which custom changes you have applied, i.e. transmog patch, etc.
-        Write "None" if you don't have any changes applied.
+        Any other information u believe could be valueable in this bug report.
     validations:
       required: true
