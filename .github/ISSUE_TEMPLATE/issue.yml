@@ -89,7 +89,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: Level, Class, and Spec
+    id: LevelClassSpec
     attributes:
       label: Level, Class, and Spec
       description: |
